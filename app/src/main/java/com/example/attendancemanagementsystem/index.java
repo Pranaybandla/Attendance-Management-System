@@ -20,9 +20,21 @@ public class index extends AppCompatActivity {
                 onClickAddFacultyBTN(v);
             }
         });
+
+        Button addStudentBTN = findViewById(R.id.addStudentBTN);
+        addStudentBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickAddStudentBTN(v);
+            }
+        });
     }
     public void onClickAddFacultyBTN(View v){
         Intent intent = new Intent(this, addFaculty.class);
+        startActivity(intent);
+    }
+    public void onClickAddStudentBTN(View v){
+        Intent intent = new Intent(this, addStudent.class );
         startActivity(intent);
     }
 }
