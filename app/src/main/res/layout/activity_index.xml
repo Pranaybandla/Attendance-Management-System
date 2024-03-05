@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/viewStudentBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -38,11 +38,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:text="Add faculty"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/viewStudentBTN"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/viewFacultyBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -56,6 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Logout"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/viewFacultyBTN"
         tools:layout_editor_absoluteX="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

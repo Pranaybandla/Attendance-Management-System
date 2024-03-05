@@ -28,6 +28,20 @@ public class index extends AppCompatActivity {
                 onClickAddStudentBTN(v);
             }
         });
+        Button viewStudentBTN = findViewById(R.id.viewStudentBTN);
+        viewStudentBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickViewStudentBTN(v);
+            }
+        });
+        Button viewFacultyBTN = findViewById(R.id.viewFacultyBTN);
+        viewFacultyBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickViewFacultyBTN(v);
+            }
+        });
     }
     public void onClickAddFacultyBTN(View v){
         Intent intent = new Intent(this, addFaculty.class);
@@ -35,6 +49,14 @@ public class index extends AppCompatActivity {
     }
     public void onClickAddStudentBTN(View v){
         Intent intent = new Intent(this, addStudent.class );
+        startActivity(intent);
+    }
+    public void onClickViewStudentBTN(View v){
+        Intent intent = new Intent(this, viewStudent.class );
+        startActivity(intent);
+    }
+    public void onClickViewFacultyBTN(View v){
+        Intent intent = new Intent(this, viewFaculty.class );
         startActivity(intent);
     }
 }
