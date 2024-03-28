@@ -13,6 +13,13 @@ public class index extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
+        Button logoutBTN = findViewById(R.id.logoutBTN);
+        logoutBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickLogoutBTN(v);
+            }
+        });
         Button addfacultyBTN = findViewById(R.id.addfacultyBTN);
         addfacultyBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +50,7 @@ public class index extends AppCompatActivity {
             }
         });
     }
+
     public void onClickAddFacultyBTN(View v){
         Intent intent = new Intent(this, addFaculty.class);
         startActivity(intent);
@@ -57,6 +65,11 @@ public class index extends AppCompatActivity {
     }
     public void onClickViewFacultyBTN(View v){
         Intent intent = new Intent(this, viewFaculty.class );
+        startActivity(intent);
+    }
+
+    public void onClickLogoutBTN(View v){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
