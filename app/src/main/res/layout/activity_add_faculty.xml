@@ -75,11 +75,11 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/SubmitBTN"
+        android:id="@+id/SaveBT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="57dp"
-        android:text="Submit"
+        android:text="SAVE"
         app:layout_constraintTop_toBottomOf="@+id/passwdET"
         tools:layout_editor_absoluteX="162dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
