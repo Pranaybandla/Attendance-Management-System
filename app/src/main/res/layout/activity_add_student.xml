@@ -27,7 +27,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/lstnmeET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -47,11 +47,11 @@
         android:hint="Enter Mobile Number"
         android:inputType="text"
         android:textColorHint="#FAF7F7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/lstnmeET"
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/addrsET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -63,7 +63,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/branchTV"
+        android:id="@+id/branchET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -71,16 +71,16 @@
         android:hint="Enter Branch"
         android:inputType="text"
         android:textColorHint="#F1EEEE"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5"
+        app:layout_constraintTop_toBottomOf="@+id/addrsET"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/SubmitBTN1"
+        android:id="@+id/SaveBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Submit"
-        app:layout_constraintTop_toBottomOf="@+id/branchTV"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@+id/branchET"
         tools:layout_editor_absoluteX="171dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
