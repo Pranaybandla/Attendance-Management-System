@@ -1,50 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.androidattendancesystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
 
     <application
+         android:name="com.android.attendance.context.ApplicationContext"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AttendanceManagementSystem"
-        tools:targetApi="31">
+        android:icon="@drawable/ic_launcher"
+        android:label="NWMSU Attendance Management"
+        android:theme="@style/AppTheme" >
         <activity
-            android:name=".AddAttendanceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AddAttandanceSessionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".viewFaculty"
-            android:exported="false" />
-        <activity
-            android:name=".viewStudent"
-            android:exported="false" />
-        <activity
-            android:name=".addStudent"
-            android:exported="false" />
-        <activity
-            android:name=".addFaculty"
-            android:exported="false" />
-        <activity
-            android:name=".index"
-            android:exported="false" />
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="com.android.attendance.activity.MainActivity"
+            android:exported="true"
+            android:label="NWMSU Attendance Management" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+         <activity
+            android:name="com.android.attendance.activity.LoginActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+         <activity
+            android:name="com.android.attendance.activity.MenuActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+         <activity
+            android:name="com.android.attendance.activity.AddFacultyActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+        <activity
+            android:name="com.android.attendance.activity.AddStudentActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+        <activity
+            android:name="com.android.attendance.activity.ViewFacultyActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+        <activity
+            android:name="com.android.attendance.activity.ViewStudentActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+        <activity
+            android:name="com.android.attendance.activity.TestActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+         <activity
+            android:name="com.android.attendance.activity.ViewStudentByBranchYear"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+          <activity
+            android:name="com.android.attendance.activity.AddAttandanceSessionActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+         <activity
+            android:name="com.android.attendance.activity.AddAttendanceActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+         <activity
+            android:name="com.android.attendance.activity.ViewAttendanceByFacultyActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+         <activity
+            android:name="com.android.attendance.activity.ViewAttendancePerStudentActivity"
+            android:label="NWMSU Attendance Management" >
+        </activity>
+        
     </application>
 
 </manifest>
